@@ -4,11 +4,11 @@ This is a simple Flask application for scheduling meetings and displaying the sc
 # Setup
 Clone the repository to your local machine:
 
-# bash
+'''bash
 Copy code
 git clone <repository_url>
 Navigate to the project directory:
-
+'''
 # bash
 Copy code
 cd calendar-meeting
