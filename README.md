@@ -2,13 +2,27 @@
 This is a simple Flask application for scheduling meetings and displaying the schedule.
 
 # Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/nitesh60/calendar-meeting.git
+
+# Navigate to the project directory
+cd calendar-meeting
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the Flask application
+python app.py
+```
 Clone the repository to your local machine:
 
-'''bash
+```bash
 Copy code
 git clone <repository_url>
 Navigate to the project directory:
-'''
+```
 # bash
 Copy code
 cd calendar-meeting
