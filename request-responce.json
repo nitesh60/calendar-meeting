@@ -1,0 +1,474 @@
+GET http://127.0.0.1:5000/schedule: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 54054
+      },
+      "remote": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 5000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.37.3",
+    "accept": "*/*",
+    "postman-token": "728b4c14-b99e-4eea-8eef-89c45424f898",
+    "host": "127.0.0.1:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "2"
+  },
+  "Request Body": "\r\n",
+  "Response Headers": {
+    "content-type": "application/json",
+    "content-length": "21",
+    "server": "Werkzeug/1.0.1 Python/3.8.5",
+    "date": "Mon, 08 Apr 2024 16:51:22 GMT"
+  },
+  "Response Body": "{\n  \"schedule\": []\n}\n"
+}
+GET http://127.0.0.1:5000/add_meeting: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 54100
+      },
+      "remote": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 5000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.37.3",
+    "accept": "*/*",
+    "postman-token": "93ac508c-5c5c-4dfc-9efa-e6b3f3db05a2",
+    "host": "127.0.0.1:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "145"
+  },
+  "Request Body": "{\r\n    \"day\": \"2024-03-20\",\r\n    \"start_time\": \"09:00\",\r\n    \"end_time\": \"10:00\",\r\n    \"attendees\": [\r\n        \"John\",\r\n        \"Alice\"\r\n    ]\r\n}",
+  "Response Headers": {
+    "content-type": "text/html; charset=utf-8",
+    "allow": "OPTIONS, POST",
+    "content-length": "178",
+    "server": "Werkzeug/1.0.1 Python/3.8.5",
+    "date": "Mon, 08 Apr 2024 16:52:00 GMT"
+  },
+  "Response Body": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>405 Method Not Allowed</title>\n<h1>Method Not Allowed</h1>\n<p>The method is not allowed for the requested URL.</p>\n"
+}
+POST http://127.0.0.1:5000/add_meeting: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 54103
+      },
+      "remote": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 5000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.37.3",
+    "accept": "*/*",
+    "postman-token": "472b3afd-a378-417a-9ef5-0a2cc9da9c56",
+    "host": "127.0.0.1:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "145"
+  },
+  "Request Body": "{\r\n    \"day\": \"2024-03-20\",\r\n    \"start_time\": \"09:00\",\r\n    \"end_time\": \"10:00\",\r\n    \"attendees\": [\r\n        \"John\",\r\n        \"Alice\"\r\n    ]\r\n}",
+  "Response Headers": {
+    "content-type": "application/json",
+    "content-length": "51",
+    "server": "Werkzeug/1.0.1 Python/3.8.5",
+    "date": "Mon, 08 Apr 2024 16:52:04 GMT"
+  },
+  "Response Body": "{\n  \"message\": \"Meeting scheduled successfully.\"\n}\n"
+}
+GET http://127.0.0.1:5000/schedule: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 54108
+      },
+      "remote": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 5000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.37.3",
+    "accept": "*/*",
+    "postman-token": "e7536d1e-7edd-411d-883a-bdeebac7d8c1",
+    "host": "127.0.0.1:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Request Body": "",
+  "Response Headers": {
+    "content-type": "application/json",
+    "content-length": "184",
+    "server": "Werkzeug/1.0.1 Python/3.8.5",
+    "date": "Mon, 08 Apr 2024 16:52:12 GMT"
+  },
+  "Response Body": "{\n  \"schedule\": [\n    {\n      \"attendees\": [\n        \"John\", \n        \"Alice\"\n      ], \n      \"day\": \"2024-03-20\", \n      \"end_time\": \"10:00\", \n      \"start_time\": \"09:00\"\n    }\n  ]\n}\n"
+}
+POST http://127.0.0.1:5000/add_meeting: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 54138
+      },
+      "remote": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 5000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.37.3",
+    "accept": "*/*",
+    "postman-token": "b4026631-b0c6-4520-90c4-676c034042c0",
+    "host": "127.0.0.1:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "141"
+  },
+  "Request Body": "{\r\n    \"day\": \"2024-03-20\",\r\n    \"start_time\": \"09:00\",\r\n    \"end_time\": \"10:00\",\r\n    \"attendees\": [\r\n        \"Ben\",\r\n        \"Al\"\r\n    ]\r\n}",
+  "Response Headers": {
+    "content-type": "application/json",
+    "content-length": "51",
+    "server": "Werkzeug/1.0.1 Python/3.8.5",
+    "date": "Mon, 08 Apr 2024 16:53:08 GMT"
+  },
+  "Response Body": "{\n  \"message\": \"Meeting scheduled successfully.\"\n}\n"
+}
+GET http://127.0.0.1:5000/schedule: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 54214
+      },
+      "remote": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 5000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.37.3",
+    "accept": "*/*",
+    "postman-token": "8baa2e26-1ce5-4967-be04-1c9f942a038e",
+    "host": "127.0.0.1:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Request Body": "",
+  "Response Headers": {
+    "content-type": "application/json",
+    "content-length": "342",
+    "server": "Werkzeug/1.0.1 Python/3.8.5",
+    "date": "Mon, 08 Apr 2024 16:55:30 GMT"
+  },
+  "Response Body": "{\n  \"schedule\": [\n    {\n      \"attendees\": [\n        \"John\", \n        \"Alice\"\n      ], \n      \"day\": \"2024-03-20\", \n      \"end_time\": \"10:00\", \n      \"start_time\": \"09:00\"\n    }, \n    {\n      \"attendees\": [\n        \"Ben\", \n        \"Al\"\n      ], \n      \"day\": \"2024-03-20\", \n      \"end_time\": \"10:00\", \n      \"start_time\": \"09:00\"\n    }\n  ]\n}\n"
+}
+GET http://127.0.0.1:5000/schedule: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 54230
+      },
+      "remote": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 5000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.37.3",
+    "accept": "*/*",
+    "postman-token": "92c03a77-a5e2-4701-ac90-bead1a7118de",
+    "host": "127.0.0.1:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Request Body": "",
+  "Response Headers": {
+    "content-type": "application/json",
+    "content-length": "21",
+    "server": "Werkzeug/1.0.1 Python/3.8.5",
+    "date": "Mon, 08 Apr 2024 16:55:57 GMT"
+  },
+  "Response Body": "{\n  \"schedule\": []\n}\n"
+}
+POST http://127.0.0.1:5000/add_meeting: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 54239
+      },
+      "remote": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 5000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.37.3",
+    "accept": "*/*",
+    "postman-token": "b9d16035-7d2a-4998-961d-f8cf191ab013",
+    "host": "127.0.0.1:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "145"
+  },
+  "Request Body": "{\r\n    \"day\": \"2024-03-20\",\r\n    \"start_time\": \"09:00\",\r\n    \"end_time\": \"10:00\",\r\n    \"attendees\": [\r\n        \"John\",\r\n        \"Alice\"\r\n    ]\r\n}",
+  "Response Headers": {
+    "content-type": "application/json",
+    "content-length": "51",
+    "server": "Werkzeug/1.0.1 Python/3.8.5",
+    "date": "Mon, 08 Apr 2024 16:56:20 GMT"
+  },
+  "Response Body": "{\n  \"message\": \"Meeting scheduled successfully.\"\n}\n"
+}
+POST http://127.0.0.1:5000/add_meeting: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 54242
+      },
+      "remote": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 5000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.37.3",
+    "accept": "*/*",
+    "postman-token": "6c8ee300-13d5-444c-9fce-b2a18f527cfc",
+    "host": "127.0.0.1:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "147"
+  },
+  "Request Body": "{\r\n    \"day\": \"2024-03-20\",\r\n    \"start_time\": \"09:00\",\r\n    \"end_time\": \"10:00\",\r\n    \"attendees\": [\r\n        \"John1\",\r\n        \"Alice1\"\r\n    ]\r\n}",
+  "Response Headers": {
+    "content-type": "application/json",
+    "content-length": "79",
+    "server": "Werkzeug/1.0.1 Python/3.8.5",
+    "date": "Mon, 08 Apr 2024 16:56:26 GMT"
+  },
+  "Response Body": "{\n  \"message\": \"Failed to schedule meeting. There is a scheduling conflict.\"\n}\n"
+}
+POST http://127.0.0.1:5000/add_meeting: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 54255
+      },
+      "remote": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 5000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.37.3",
+    "accept": "*/*",
+    "postman-token": "6bd6a6cc-26a2-4dc0-9ea6-f8800d9543fd",
+    "host": "127.0.0.1:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "147"
+  },
+  "Request Body": "{\r\n    \"day\": \"2024-03-20\",\r\n    \"start_time\": \"08:00\",\r\n    \"end_time\": \"12:00\",\r\n    \"attendees\": [\r\n        \"John1\",\r\n        \"Alice1\"\r\n    ]\r\n}",
+  "Response Headers": {
+    "content-type": "application/json",
+    "content-length": "79",
+    "server": "Werkzeug/1.0.1 Python/3.8.5",
+    "date": "Mon, 08 Apr 2024 16:56:50 GMT"
+  },
+  "Response Body": "{\n  \"message\": \"Failed to schedule meeting. There is a scheduling conflict.\"\n}\n"
+}
+POST http://127.0.0.1:5000/add_meeting: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 54261
+      },
+      "remote": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 5000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.37.3",
+    "accept": "*/*",
+    "postman-token": "11e0f115-4ad3-4b81-aec0-ef2e27a927c0",
+    "host": "127.0.0.1:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "147"
+  },
+  "Request Body": "{\r\n    \"day\": \"2024-03-20\",\r\n    \"start_time\": \"08:00\",\r\n    \"end_time\": \"09:00\",\r\n    \"attendees\": [\r\n        \"John1\",\r\n        \"Alice1\"\r\n    ]\r\n}",
+  "Response Headers": {
+    "content-type": "application/json",
+    "content-length": "51",
+    "server": "Werkzeug/1.0.1 Python/3.8.5",
+    "date": "Mon, 08 Apr 2024 16:57:04 GMT"
+  },
+  "Response Body": "{\n  \"message\": \"Meeting scheduled successfully.\"\n}\n"
+}
+POST http://127.0.0.1:5000/add_meeting: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 54266
+      },
+      "remote": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 5000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.37.3",
+    "accept": "*/*",
+    "postman-token": "e0b2d3d4-41f0-414c-b986-15d6d8d5cb25",
+    "host": "127.0.0.1:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "83"
+  },
+  "Request Body": "{\r\n    \"day\": \"2024-03-20\",\r\n    \"start_time\": \"08:00\",\r\n    \"end_time\": \"09:00\"\r\n}",
+  "Response Headers": {
+    "content-type": "application/json",
+    "content-length": "70",
+    "server": "Werkzeug/1.0.1 Python/3.8.5",
+    "date": "Mon, 08 Apr 2024 16:57:12 GMT"
+  },
+  "Response Body": "{\n  \"message\": \"Failed to schedule meeting. Missing required data.\"\n}\n"
+}
+POST http://127.0.0.1:5000/add_meeting: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 54271
+      },
+      "remote": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 5000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.37.3",
+    "accept": "*/*",
+    "postman-token": "dd20cf39-48a2-48ac-9d12-9e63835fc7ab",
+    "host": "127.0.0.1:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "128"
+  },
+  "Request Body": "{\r\n    \"day\": \"2024-03-20\",\r\n    \"start_time\": \"08:00\",\r\n    \"end_time\": \"09:00\",\r\n    \"attendees\": [\r\n        \"John1\"\r\n    ]\r\n}",
+  "Response Headers": {
+    "content-type": "application/json",
+    "content-length": "79",
+    "server": "Werkzeug/1.0.1 Python/3.8.5",
+    "date": "Mon, 08 Apr 2024 16:57:28 GMT"
+  },
+  "Response Body": "{\n  \"message\": \"Failed to schedule meeting. There is a scheduling conflict.\"\n}\n"
+}
+POST http://127.0.0.1:5000/add_meeting: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 54275
+      },
+      "remote": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 5000
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.37.3",
+    "accept": "*/*",
+    "postman-token": "915f9b13-cc9b-4f39-a90d-523f34556f77",
+    "host": "127.0.0.1:5000",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "128"
+  },
+  "Request Body": "{\r\n    \"day\": \"2024-03-20\",\r\n    \"start_time\": \"10:00\",\r\n    \"end_time\": \"11:00\",\r\n    \"attendees\": [\r\n        \"John1\"\r\n    ]\r\n}",
+  "Response Headers": {
+    "content-type": "application/json",
+    "content-length": "51",
+    "server": "Werkzeug/1.0.1 Python/3.8.5",
+    "date": "Mon, 08 Apr 2024 16:57:40 GMT"
+  },
+  "Response Body": "{\n  \"message\": \"Meeting scheduled successfully.\"\n}\n"
+}
